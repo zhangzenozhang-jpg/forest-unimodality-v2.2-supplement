@@ -1,0 +1,305 @@
+SUPPLEMENTARY DATA FILE of "Unimodality of the independence sequence of a forest", draft version 2.2 (2 October 2026)
+Plain text. Every number below is copied by program from the data of the computer verification (Part 7); the
+descriptions of where Parts 6 and 7 are verified were updated by hand for version 2.1.1, and the version line, the title of
+Part 6 and the list of families of Part 7 for version 2.2 (the numbers are unchanged). The columns
+D(iota), m25(iota), m*(iota), boxes and slabs of Part 1 were recounted from the data by an independent program (550 boxes
+on 109 slabs; m25(iota) on all 55 rows; m*(iota) against the coverings), and the sums of this file were checked again
+independently (550 boxes on 109 slabs, 229 boxes from m* to 50, m25 on all 55 rows, m* in [35/3, 68/3]).
+Notation as in the paper: subintervals I_iota = [lam_iota, lam_(iota+1)] (iota = 0..54), bands [lb_i, lb_(i+1)] (i = 0..29),
+tilts tau_r = (0, 1/20, 1/10, 1/5, 3/10), caps theta(iota), D(iota), rates ell_r, lower edge m25(iota) = 8/(2 q(lam_(iota+1))).
+
+PART 1. The 55 subintervals (paper: Sections 4 and 5; Lemma 5.4, the coverings below 50).
+Columns: iota | band | I_iota | theta(iota) | D(iota) | ell_0(iota) | m25(iota) | m*(iota) | boxes and q-slabs of the covering of
+[m25, m*] | boxes of the covering of [m*, 50] | number of the additional interval carried (Part 3), if any.
+0 | 0 | [1/3, 9/25] | 1 | 6/5 | 619/2500 | 136/9 | 68/3 | 2 boxes, 1 slabs | 1 boxes | -
+1 | 1 | [9/25, 2/5] | 1 | 6/5 | 1309/5000 | 14 | 21 | 2 boxes, 1 slabs | 1 boxes | -
+2 | 2 | [2/5, 9/20] | 1 | 6/5 | 2793/10000 | 116/9 | 58/3 | 2 boxes, 1 slabs | 1 boxes | -
+3 | 3 | [9/20, 1/2] | 1 | 6/5 | 751/2500 | 12 | 18 | 2 boxes, 1 slabs | 1 boxes | -
+4 | 4 | [1/2, 11/20] | 1 | 6/5 | 643/2000 | 124/11 | 186/11 | 2 boxes, 1 slabs | 2 boxes | -
+5 | 5 | [11/20, 3/5] | 1 | 6/5 | 339/1000 | 32/3 | 16 | 2 boxes, 1 slabs | 2 boxes | -
+6 | 6 | [3/5, 13/20] | 7/10 | 6/5 | 3531/10000 | 132/13 | 198/13 | 2 boxes, 1 slabs | 2 boxes | -
+7 | 7 | [13/20, 7/10] | 7/10 | 6/5 | 459/1250 | 68/7 | 102/7 | 2 boxes, 1 slabs | 2 boxes | -
+8 | 8 | [7/10, 3/4] | 7/10 | 6/5 | 953/2500 | 28/3 | 14 | 3 boxes, 2 slabs | 3 boxes | -
+9 | 9 | [3/4, 39/50] | 7/10 | 6/5 | 1959/5000 | 356/39 | 178/13 | 3 boxes, 1 slabs | 3 boxes | -
+10 | 9 | [39/50, 4/5] | 13/20 | 6/5 | 817/2000 | 9 | 27/2 | 3 boxes, 1 slabs | 3 boxes | 17
+11 | 10 | [4/5, 21/25] | 3/5 | 6/5 | 4059/10000 | 184/21 | 92/7 | 7 boxes, 3 slabs | 4 boxes | -
+12 | 11 | [21/25, 43/50] | 3/5 | 6/5 | 4129/10000 | 372/43 | 558/43 | 6 boxes, 2 slabs | 4 boxes | -
+13 | 11 | [43/50, 87/100] | 3/5 | 6/5 | 4129/10000 | 748/87 | 374/29 | 5 boxes, 1 slabs | 4 boxes | -
+14 | 11 | [87/100, 22/25] | 3/5 | 6/5 | 171/400 | 94/11 | 141/11 | 5 boxes, 1 slabs | 4 boxes | 18
+15 | 12 | [22/25, 89/100] | 3/5 | 6/5 | 4199/10000 | 756/89 | 1134/89 | 6 boxes, 1 slabs | 4 boxes | -
+16 | 12 | [89/100, 91/100] | 3/5 | 6/5 | 851/2000 | 764/91 | 312/23 | 10 boxes, 2 slabs | 4 boxes | 19
+17 | 12 | [91/100, 23/25] | 3/5 | 6/5 | 217/500 | 192/23 | 288/23 | 9 boxes, 2 slabs | 6 boxes | 20
+18 | 13 | [23/25, 93/100] | 3/5 | 6/5 | 871/2000 | 772/93 | 637/48 | 9 boxes, 1 slabs | 6 boxes | 21
+19 | 13 | [93/100, 47/50] | 3/5 | 6/5 | 173/400 | 388/47 | 1261/94 | 10 boxes, 1 slabs | 7 boxes | 22
+20 | 13 | [47/50, 24/25] | 3/5 | 6/5 | 871/2000 | 49/6 | 637/48 | 21 boxes, 4 slabs | 7 boxes | 23
+21 | 14 | [24/25, 97/100] | 3/5 | 6/5 | 441/1000 | 788/97 | 2561/194 | 13 boxes, 3 slabs | 7 boxes | 24
+22 | 14 | [97/100, 99/100] | 3/5 | 6/5 | 879/2000 | 796/99 | 2587/198 | 29 boxes, 3 slabs | 7 boxes | 25
+23 | 14 | [99/100, 1] | 3/5 | 6/5 | 889/2000 | 8 | 13 | 15 boxes, 2 slabs | 7 boxes | 26
+24 | 15 | [1, 103/100] | 3/5 | 6/5 | 881/2000 | 812/103 | 2639/206 | 15 boxes, 4 slabs | 9 boxes | 5
+25 | 15 | [103/100, 26/25] | 3/5 | 6/5 | 449/1000 | 102/13 | 51/4 | 20 boxes, 2 slabs | 7 boxes | 6
+26 | 16 | [26/25, 21/20] | 3/5 | 6/5 | 901/2000 | 164/21 | 533/42 | 20 boxes, 2 slabs | 7 boxes | 7
+27 | 16 | [21/20, 107/100] | 3/5 | 6/5 | 449/1000 | 828/107 | 2691/214 | 14 boxes, 4 slabs | 7 boxes | 8
+28 | 16 | [107/100, 27/25] | 3/5 | 6/5 | 907/2000 | 208/27 | 338/27 | 23 boxes, 3 slabs | 7 boxes | 9
+29 | 17 | [27/25, 11/10] | 3/5 | 6/5 | 113/250 | 84/11 | 273/22 | 64 boxes, 6 slabs | 8 boxes | 10
+30 | 17 | [11/10, 28/25] | 3/5 | 6/5 | 907/2000 | 53/7 | 689/56 | 29 boxes, 5 slabs | 8 boxes | 11
+31 | 18 | [28/25, 57/50] | 3/5 | 6/5 | 4481/10000 | 428/57 | 1391/114 | 46 boxes, 5 slabs | 5 boxes | -
+32 | 18 | [57/50, 29/25] | 3/5 | 6/5 | 4481/10000 | 216/29 | 351/29 | 27 boxes, 6 slabs | 5 boxes | -
+33 | 19 | [29/25, 59/50] | 3/5 | 6/5 | 1129/2500 | 436/59 | 1417/118 | 13 boxes, 4 slabs | 5 boxes | -
+34 | 19 | [59/50, 6/5] | 3/5 | 6/5 | 1129/2500 | 22/3 | 143/12 | 10 boxes, 3 slabs | 5 boxes | -
+35 | 20 | [6/5, 49/40] | 3/5 | 6/5 | 1129/2500 | 356/49 | 1157/98 | 9 boxes, 3 slabs | 4 boxes | -
+36 | 20 | [49/40, 5/4] | 3/5 | 6/5 | 1129/2500 | 36/5 | 63/5 | 7 boxes, 2 slabs | 4 boxes | -
+37 | 21 | [5/4, 13/10] | 3/5 | 6/5 | 4551/10000 | 92/13 | 161/13 | 6 boxes, 2 slabs | 4 boxes | -
+38 | 22 | [13/10, 27/20] | 7/10 | 7/5 | 23/50 | 188/27 | 96/7 | 8 boxes, 2 slabs | 5 boxes | 1
+39 | 22 | [27/20, 7/5] | 7/10 | 7/5 | 37/80 | 48/7 | 96/7 | 5 boxes, 1 slabs | 3 boxes | 12
+40 | 23 | [7/5, 57/40] | 7/10 | 7/5 | 4481/10000 | 388/57 | 679/57 | 4 boxes, 1 slabs | 3 boxes | -
+41 | 23 | [57/40, 29/20] | 7/10 | 7/5 | 4481/10000 | 196/29 | 343/29 | 4 boxes, 1 slabs | 3 boxes | -
+42 | 23 | [29/20, 3/2] | 7/10 | 7/5 | 4481/10000 | 20/3 | 35/3 | 4 boxes, 1 slabs | 3 boxes | -
+43 | 24 | [3/2, 8/5] | 7/10 | 8/5 | 1129/2500 | 13/2 | 221/16 | 6 boxes, 2 slabs | 3 boxes | -
+44 | 25 | [8/5, 33/20] | 9/10 | 8/5 | 939/2000 | 212/33 | 187/14 | 5 boxes, 1 slabs | 3 boxes | 2
+45 | 25 | [33/20, 17/10] | 19/20 | 8/5 | 47/100 | 108/17 | 405/34 | 4 boxes, 1 slabs | 3 boxes | 3
+46 | 25 | [17/10, 7/4] | 19/20 | 8/5 | 941/2000 | 44/7 | 165/14 | 4 boxes, 1 slabs | 3 boxes | 4
+47 | 26 | [7/4, 9/5] | 1 | 9/5 | 941/2000 | 56/9 | 493/38 | 5 boxes, 1 slabs | 3 boxes | 13
+48 | 26 | [9/5, 37/20] | 1 | 9/5 | 47/100 | 228/37 | 493/38 | 4 boxes, 1 slabs | 3 boxes | 14
+49 | 26 | [37/20, 19/10] | 1 | 9/5 | 47/100 | 116/19 | 493/38 | 4 boxes, 1 slabs | 3 boxes | 15
+50 | 27 | [19/10, 39/20] | 1 | 9/5 | 47/100 | 236/39 | 1037/82 | 4 boxes, 1 slabs | 3 boxes | 16
+51 | 27 | [39/20, 2] | 1 | 9/5 | 2223/5000 | 6 | 1037/82 | 4 boxes, 1 slabs | 3 boxes | -
+52 | 27 | [2, 41/20] | 1 | 21/10 | 2223/5000 | 244/41 | 1037/82 | 4 boxes, 1 slabs | 3 boxes | -
+53 | 28 | [41/20, 9/4] | 1 | 21/10 | 269/625 | 52/9 | 221/18 | 4 boxes, 2 slabs | 3 boxes | -
+54 | 29 | [9/4, 7/3] | 1 | 21/10 | 1129/2500 | 40/7 | 90/7 | 4 boxes, 1 slabs | 2 boxes | -
+Totals: 550 boxes on 109 q-slabs below m*(iota); 229 boxes (on 60 q-slabs) from m*(iota) to 50.
+
+PART 2. The 30 bands (closed; where one band is needed for an activity, a shared end point is taken in the left band;
+band 27 = [19/10, 41/20] is split at lambda = 2 for the coverings above 50). Columns: i | band | ell_0..ell_4 | a_U,0..a_U,4
+(the pair (a_U,r, ell_r) of the unit inequality U(lambda, tau_r, a_U,r, ell_r) verified on the band, Lemma 4.42(a)).
+Coarse caps theta: 1 on [1/3,3/5], 7/10 on (3/5,4/5], 3/5 on (4/5,13/10], 7/10 on (13/10,8/5], 1 on (8/5,7/3].
+0 | [1/3, 9/25] | 619/2500 2353/10000 551/2500 489/2500 169/1000 | 51/2000 121/5000 23/1000 51/2500 89/5000
+1 | [9/25, 2/5] | 1309/5000 613/2500 2327/10000 509/2500 439/2500 | 67/2500 127/5000 241/10000 107/5000 187/10000
+2 | [2/5, 9/20] | 2793/10000 2617/10000 2451/10000 271/1250 467/2500 | 71/2500 27/1000 16/625 57/2500 199/10000
+3 | [9/20, 1/2] | 751/2500 563/2000 1333/5000 291/1250 1001/5000 | 303/10000 18/625 273/10000 121/5000 53/2500
+4 | [1/2, 11/20] | 643/2000 3013/10000 2821/10000 1231/5000 1067/5000 | 161/5000 153/5000 29/1000 129/5000 9/400
+5 | [11/20, 3/5] | 339/1000 1589/5000 119/400 1297/5000 139/625 | 341/10000 81/2500 307/10000 17/625 119/5000
+6 | [3/5, 13/20] | 3531/10000 3343/10000 3129/10000 1363/5000 146/625 | 359/10000 341/10000 323/10000 18/625 63/2500
+7 | [13/20, 7/10] | 459/1250 139/400 3253/10000 177/625 97/400 | 189/5000 359/10000 17/500 151/5000 53/2000
+8 | [7/10, 3/4] | 953/2500 1787/5000 669/2000 182/625 623/2500 | 397/10000 377/10000 357/10000 159/5000 139/5000
+9 | [3/4, 4/5] | 1959/5000 3673/10000 3437/10000 187/625 2559/10000 | 26/625 79/2000 187/5000 83/2500 291/10000
+10 | [4/5, 21/25] | 4059/10000 761/2000 3561/10000 192/625 1313/5000 | 27/625 411/10000 389/10000 173/5000 303/10000
+11 | [21/25, 22/25] | 4129/10000 3871/10000 3623/10000 5/16 267/1000 | 28/625 17/400 403/10000 179/5000 313/10000
+12 | [22/25, 23/25] | 4199/10000 3937/10000 921/2500 1589/5000 679/2500 | 231/5000 439/10000 26/625 37/1000 81/2500
+13 | [23/25, 24/25] | 4269/10000 4003/10000 743/2000 202/625 1369/5000 | 239/5000 227/5000 43/1000 191/5000 167/5000
+14 | [24/25, 1] | 269/625 1009/2500 236/625 1629/5000 1391/5000 | 123/2500 117/2500 443/10000 197/5000 69/2000
+15 | [1, 26/25] | 7/16 4069/10000 3807/10000 657/2000 701/2500 | 517/10000 491/10000 93/2000 413/10000 181/5000
+16 | [26/25, 27/25] | 441/1000 827/2000 1919/5000 207/625 1413/5000 | 11/200 261/5000 99/2000 11/250 77/2000
+17 | [27/25, 28/25] | 2223/5000 521/1250 3869/10000 1669/5000 178/625 | 583/10000 277/5000 21/400 467/10000 51/1250
+18 | [28/25, 29/25] | 4481/10000 4201/10000 39/100 841/2500 178/625 | 617/10000 293/5000 111/2000 493/10000 27/625
+19 | [29/25, 6/5] | 1129/2500 2117/5000 3931/10000 3391/10000 2871/10000 | 13/200 309/5000 117/2000 13/250 91/2000
+20 | [6/5, 5/4] | 1129/2500 2117/5000 3931/10000 841/2500 2871/10000 | 43/625 653/10000 619/10000 11/200 481/10000
+21 | [5/4, 13/10] | 4551/10000 2117/5000 1981/5000 3391/10000 2871/10000 | 729/10000 693/10000 41/625 583/10000 51/1000
+22 | [13/10, 7/5] | 2223/5000 827/2000 1919/5000 207/625 701/2500 | 387/5000 147/2000 697/10000 619/10000 271/5000
+23 | [7/5, 3/2] | 4481/10000 521/1250 3869/10000 207/625 701/2500 | 823/10000 781/10000 37/500 329/5000 36/625
+24 | [3/2, 8/5] | 1129/2500 4201/10000 39/100 1669/5000 701/2500 | 871/10000 827/10000 49/625 697/10000 61/1000
+25 | [8/5, 7/4] | 441/1000 2051/5000 3807/10000 202/625 679/2500 | 931/10000 177/2000 419/5000 149/2000 163/2500
+26 | [7/4, 19/10] | 2223/5000 2051/5000 3807/10000 202/625 679/2500 | 251/2500 477/5000 113/1250 803/10000 703/10000
+27 | [19/10, 41/20] | 2223/5000 2051/5000 3807/10000 641/2000 2693/10000 | 1077/10000 1023/10000 969/10000 861/10000 377/5000
+28 | [41/20, 9/4] | 269/625 397/1000 921/2500 1549/5000 651/2500 | 1161/10000 1103/10000 209/2000 929/10000 813/10000
+29 | [9/4, 7/3] | 1129/2500 521/1250 3869/10000 657/2000 1369/5000 | 123/1000 73/625 1107/10000 123/1250 861/10000
+
+PART 3. The 26 additional intervals of the Laplace-transform bounds at tau_0 = 0. Columns: no. | interval | a_U | ell |
+subinterval iota that carries it (ell_0(iota) = ell there).
+1 | [13/10, 27/20] | 7/100 | 23/50 | 38
+2 | [8/5, 33/20] | 47/500 | 939/2000 | 44
+3 | [33/20, 17/10] | 97/1000 | 47/100 | 45
+4 | [17/10, 7/4] | 1/10 | 941/2000 | 46
+5 | [1, 103/100] | 23/500 | 881/2000 | 24
+6 | [103/100, 26/25] | 23/500 | 449/1000 | 25
+7 | [26/25, 21/20] | 7/125 | 901/2000 | 26
+8 | [21/20, 107/100] | 7/125 | 449/1000 | 27
+9 | [107/100, 27/25] | 29/500 | 907/2000 | 28
+10 | [27/25, 11/10] | 59/1000 | 113/250 | 29
+11 | [11/10, 28/25] | 11/200 | 907/2000 | 30
+12 | [27/20, 7/5] | 81/1000 | 37/80 | 39
+13 | [7/4, 9/5] | 101/1000 | 941/2000 | 47
+14 | [9/5, 37/20] | 93/1000 | 47/100 | 48
+15 | [37/20, 19/10] | 19/200 | 47/100 | 49
+16 | [19/10, 39/20] | 27/250 | 47/100 | 50
+17 | [39/50, 4/5] | 37/1000 | 817/2000 | 10
+18 | [87/100, 22/25] | 1/25 | 171/400 | 14
+19 | [89/100, 23/25] | 41/1000 | 851/2000 | 16
+20 | [91/100, 23/25] | 21/500 | 217/500 | 17
+21 | [23/25, 93/100] | 6/125 | 871/2000 | 18
+22 | [23/25, 47/50] | 43/1000 | 173/400 | 19
+23 | [47/50, 24/25] | 43/1000 | 871/2000 | 20
+24 | [24/25, 97/100] | 1/20 | 441/1000 | 21
+25 | [97/100, 99/100] | 9/250 | 879/2000 | 22
+26 | [99/100, 1] | 11/250 | 889/2000 | 23
+
+PART 4. The 47 activity sub-intervals of the checks of the variance bound (Theorem 4.21, family F3). Columns:
+[lambda_lo, lambda_hi] | segment | lambda_p of the child polygon used | Y_L of Lemma 4.19(ii) | feasibility cut used | V: checks of
+vertex functions | CA: parent intervals for CA | least lower bound after transport over the V and CA checks (rounded down).
+Every sub-interval also has the five checks of Lemma 4.19. Totals: V 939 + 1,047, CA 239 + 204.
+[1/3, 9/25] | lo | 9/25 | 1/8 | no | 39 | 8 | 0.00051
+[9/25, 2/5] | lo | 2/5 | 1/8 | no | 45 | 9 | 0.00020
+[2/5, 11/25] | lo | 11/25 | 1/8 | no | 40 | 9 | 0.00021
+[11/25, 12/25] | lo | 12/25 | 1/8 | no | 38 | 8 | 0.00011
+[12/25, 13/25] | lo | 13/25 | 1/8 | no | 36 | 8 | 0.00047
+[13/25, 11/20] | lo | 11/20 | 1/8 | no | 35 | 7 | 0.00054
+[11/20, 9/16] | mid | 9/16 | 1/5 | no | 40 | 10 | 0.0266
+[9/16, 23/40] | mid | 23/40 | 1/5 | no | 40 | 10 | 0.0342
+[23/40, 3/5] | mid | 3/5 | 1/5 | no | 46 | 11 | 0.0124
+[3/5, 5/8] | mid | 5/8 | 1/5 | no | 43 | 11 | 0.0238
+[5/8, 13/20] | mid | 13/20 | 1/5 | no | 41 | 10 | 0.0333
+[13/20, 27/40] | mid | 27/40 | 1/5 | no | 40 | 10 | 0.0333
+[27/40, 7/10] | mid | 7/10 | 1/5 | no | 40 | 10 | 0.0324
+[7/10, 3/4] | mid | 3/4 | 1/5 | no | 50 | 13 | 0.0151
+[3/4, 4/5] | mid | 4/5 | 1/5 | no | 45 | 12 | 0.0234
+[4/5, 17/20] | mid | 17/20 | 1/5 | no | 43 | 12 | 0.0212
+[17/20, 9/10] | mid | 9/10 | 1/5 | no | 40 | 12 | 0.0197
+[9/10, 47/50] | mid | 47/50 | 1/5 | no | 39 | 11 | 0.0195
+[47/50, 1] | mid | 1 | 3/10 | no | 39 | 13 | 0.0150
+[1, 21/20] | mid | 21/20 | 3/10 | no | 36 | 12 | 0.0151
+[21/20, 11/10] | mid | 23/20 | 1/4 | no | 40 | 12 | 0.0127
+[11/10, 23/20] | mid | 23/20 | 1/4 | no | 37 | 12 | 0.0088
+[23/20, 6/5] | mid | 5/4 | 1/4 | yes | 62 | 12 | 0.0056
+[6/5, 5/4] | mid | 5/4 | 1/5 | yes | 60 | 12 | 0.0034
+[5/4, 13/10] | mid | 13/10 | 1/5 | yes | 58 | 14 | 0.0016
+[13/10, 131/100] | mid | 131/100 | 1/5 | yes | 50 | 10 | 0.0014
+[131/100, 263/200] | mid | 263/200 | 1/5 | yes | 50 | 10 | 0.0006
+[263/200, 27/20] | u1 | 27/20 | 1/5 | yes | 46 | 8 | 0.00027
+[27/20, 7/5] | u1 | 7/5 | 1/5 | yes | 46 | 8 | 0.00048
+[7/5, 29/20] | u1 | 29/20 | 1/5 | yes | 44 | 8 | 0.00018
+[29/20, 3/2] | u1 | 3/2 | 1/5 | yes | 44 | 8 | 0.00024
+[3/2, 31/20] | u2 | 31/20 | 1/5 | yes | 38 | 8 | 0.00085
+[31/20, 8/5] | u2 | 8/5 | 1/5 | yes | 38 | 8 | 0.00083
+[8/5, 33/20] | u2 | 33/20 | 1/5 | yes | 44 | 8 | 0.00032
+[33/20, 17/10] | u2 | 17/10 | 1/5 | yes | 44 | 8 | 0.00004
+[17/10, 7/4] | u2 | 7/4 | 1/5 | yes | 44 | 8 | 0.00059
+[7/4, 9/5] | u3 | 9/5 | 1/5 | yes | 36 | 7 | 0.00030
+[9/5, 37/20] | u3 | 37/20 | 1/5 | yes | 36 | 7 | 0.00018
+[37/20, 19/10] | u3 | 19/10 | 1/5 | yes | 36 | 7 | 0.00010
+[19/10, 39/20] | u3 | 39/20 | 1/5 | yes | 44 | 8 | 0.00024
+[39/20, 2] | u3 | 2 | 1/5 | yes | 44 | 8 | 0.00005
+[2, 41/20] | u4 | 41/20 | 1/5 | yes | 36 | 7 | 0.00030
+[41/20, 21/10] | u4 | 21/10 | 1/5 | yes | 36 | 7 | 0.00089
+[21/10, 43/20] | u4 | 43/20 | 1/5 | yes | 36 | 7 | 0.00080
+[43/20, 11/5] | u4 | 11/5 | 1/5 | yes | 36 | 8 | 0.00062
+[11/5, 9/4] | u4 | 9/4 | 1/5 | yes | 44 | 8 | 0.00002
+[9/4, 7/3] | u4 | 7/3 | 1/5 | yes | 42 | 9 | 0.00019
+Base inequality: activity intervals cut at 1491/2000, 387/400, 461/400, 633/500, 1309/1000 on the segment mid (two halves
+each), at 2687/6000 on lo and at 58/25 on u4, one interval on each of u1, u2, u3 (13 checks).
+
+PART 5. The 45 child polygons: J <= a_i + b_i r (i = 0, 1, 2) and J <= J_cap on the child curve at lambda_p, hence at every
+lambda <= lambda_p. Six decimals, rounded to nearest (the checks use the exact constants; these rounded lines were checked
+separately to be valid as well). Columns: lambda_p | a_0 b_0 a_1 b_1 a_2 b_2 J_cap | segment | t* (start of the monotone tail) |
+checks (Taylor subintervals and chain segments; 678 + 966).
+9/25 | 0.021127 0.027759 0.058692 0.009611 0.100195 0.001228 0.111676 | lo | 3/2 | 36
+2/5 | 0.022213 0.033123 0.062523 0.011755 0.108129 0.001624 0.122063 | lo | 3/2 | 36
+11/25 | 0.023152 0.038753 0.065989 0.014080 0.115568 0.002086 0.132139 | lo | 3/2 | 36
+12/25 | 0.023960 0.044612 0.069124 0.016574 0.122544 0.002613 0.141924 | lo | 3/2 | 36
+13/25 | 0.024653 0.050667 0.071955 0.019228 0.129084 0.003208 0.151434 | lo | 3/2 | 36
+11/20 | 0.025106 0.055319 0.073895 0.021316 0.133720 0.003698 0.158395 | lo | 3/2 | 36
+9/16 | 0.025279 0.057282 0.074661 0.022210 0.135587 0.003914 0.161255 | mid | 3/2 | 36
+23/40 | 0.025444 0.059259 0.075402 0.023117 0.137416 0.004136 0.164090 | mid | 3/2 | 36
+3/5 | 0.025747 0.063249 0.076813 0.024971 0.140965 0.004600 0.169690 | mid | 3/2 | 36
+5/8 | 0.026019 0.067285 0.078133 0.026876 0.144373 0.005090 0.175199 | mid | 3/2 | 36
+13/20 | 0.026263 0.071361 0.079369 0.028829 0.147646 0.005606 0.180620 | mid | 3/2 | 36
+27/40 | 0.026479 0.075472 0.080524 0.030827 0.150789 0.006148 0.185956 | mid | 3/2 | 35
+7/10 | 0.026671 0.079612 0.081604 0.032870 0.153805 0.006716 0.191210 | mid | 3/2 | 35
+3/4 | 0.026986 0.087968 0.083549 0.037078 0.159482 0.007927 0.201480 | mid | 3/2 | 35
+4/5 | 0.027222 0.096397 0.085236 0.041437 0.164709 0.009239 0.211450 | mid | 3/2 | 35
+17/20 | 0.027387 0.104874 0.086691 0.045932 0.169520 0.010647 0.221137 | mid | 3/2 | 35
+9/10 | 0.027493 0.113373 0.087937 0.050548 0.173946 0.012150 0.230558 | mid | 3/2 | 35
+47/50 | 0.027540 0.120176 0.088799 0.054320 0.177226 0.013419 0.237912 | mid | 3/2 | 34
+1 | 0.027556 0.130365 0.089886 0.060093 0.181745 0.015427 0.248655 | mid | 3/2 | 34
+21/20 | 0.027527 0.138824 0.090624 0.064997 0.185168 0.017194 0.257358 | mid | 3/2 | 34
+23/20 | 0.027371 0.155606 0.091704 0.075016 0.191167 0.020971 0.274129 | mid | 3/2 | 38
+5/4 | 0.027116 0.172140 0.092337 0.085253 0.196164 0.025046 0.290121 | mid | 13/8 | 37
+13/10 | 0.026959 0.180294 0.092513 0.090433 0.198328 0.027188 0.297847 | mid | 13/8 | 37
+131/100 | 0.026925 0.181915 0.092539 0.091473 0.198736 0.027624 0.299372 | mid | 13/8 | 37
+263/200 | 0.026908 0.182725 0.092550 0.091993 0.198937 0.027843 0.300132 | mid | 13/8 | 37
+27/20 | 0.026785 0.188366 0.092608 0.095644 0.200288 0.029395 0.305404 | u1 | 13/8 | 36
+7/5 | 0.026599 0.196349 0.092629 0.100879 0.202060 0.031663 0.312800 | u1 | 13/8 | 36
+29/20 | 0.026401 0.204241 0.092584 0.106132 0.203655 0.033990 0.320041 | u1 | 13/8 | 36
+3/2 | 0.026194 0.212038 0.092479 0.111398 0.205084 0.036372 0.327133 | u1 | 13/8 | 36
+31/20 | 0.025979 0.219738 0.092320 0.116671 0.206360 0.038807 0.334084 | u2 | 13/8 | 41
+8/5 | 0.025757 0.227338 0.092112 0.121947 0.207491 0.041291 0.340898 | u2 | 7/4 | 38
+33/20 | 0.025530 0.234838 0.091861 0.127221 0.208488 0.043821 0.347582 | u2 | 7/4 | 38
+17/10 | 0.025298 0.242235 0.091571 0.132489 0.209360 0.046396 0.354139 | u2 | 7/4 | 38
+7/4 | 0.025063 0.249530 0.091246 0.137748 0.210113 0.049012 0.360575 | u2 | 7/4 | 38
+9/5 | 0.024826 0.256722 0.090888 0.142995 0.210757 0.051666 0.366894 | u3 | 7/4 | 38
+37/20 | 0.024586 0.263811 0.090503 0.148225 0.211297 0.054357 0.373101 | u3 | 7/4 | 37
+19/10 | 0.024346 0.270797 0.090092 0.153437 0.211742 0.057082 0.379199 | u3 | 7/4 | 37
+39/20 | 0.024104 0.277680 0.089658 0.158628 0.212097 0.059838 0.385193 | u3 | 7/4 | 37
+2 | 0.023863 0.284462 0.089205 0.163796 0.212367 0.062623 0.391085 | u3 | 7/4 | 37
+41/20 | 0.023622 0.291142 0.088733 0.168939 0.212558 0.065436 0.396880 | u4 | 7/4 | 37
+21/10 | 0.023381 0.297722 0.088246 0.174054 0.212676 0.068274 0.402581 | u4 | 15/8 | 38
+43/20 | 0.023142 0.304202 0.087745 0.179141 0.212725 0.071135 0.408190 | u4 | 15/8 | 38
+11/5 | 0.022904 0.310584 0.087231 0.184197 0.212710 0.074018 0.413711 | u4 | 15/8 | 38
+9/4 | 0.022667 0.316869 0.086707 0.189221 0.212629 0.076923 0.419147 | u4 | 15/8 | 38
+7/3 | 0.022277 0.327131 0.085814 0.197521 0.212384 0.081796 0.428023 | u4 | 15/8 | 38
+
+PART 6. The 31 coverings of [50, 400] of version 2.1.1 of the paper (its Lemma 5.6, the coverings above 50, family F7 of
+version 2.1.1). Version 2.2 does not use them: they belong to the route of the formal proof (Section 8 of the paper). The
+numbers of results in this Part are those of version 2.1.1. By band (band 27 in two halves,
+lower [19/10,2] with D = 9/5 and upper [2,41/20] with D = 21/10). Columns: band | entries | where verified. In the formal proof
+(the route of version 2.1.1; branch one-route-v21) all 227 entries, in the converted form of Proposition 5.5, are checked directly as
+boxes of the floor variant, the four entries of the lower half of band 27 included; as tail-priced coverings, 25 were
+verified in the earlier formal proof (branch fiber-floor-21) and 6 outside it (two programs). All 227 converted entries were rechecked as boxes of the floor variant by an independent
+exact checker (least margin 1.56e-6, largest cutoff 935). The four entries of the lower half of band 27 with lambda_h > 2
+are its boxes 0 to 3, identical (box, dual, tail prices, cutoff and index) to boxes 0, 1, 2 and 5 of the upper half.
+band 0 | 10 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 1 | 8 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 2 | 10 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 3 | 10 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 4 | 6 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 5 | 6 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 6 | 4 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 7 | 4 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 8 | 5 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 9 | 6 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 10 | 5 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 11 | 7 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 12 | 9 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 13 | 12 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 14 | 15 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 15 | 13 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 16 | 12 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 17 | 9 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 18 | 8 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 19 | 5 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 20 | 5 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 21 | 5 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 22 | 6 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 23 | 5 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 24 | 4 | formal proof (converted entries); outside the earlier formal proof (two programs)
+band 25 | 6 | formal proof (converted entries); earlier formal proof (tail-priced)
+band 26 | 6 | formal proof (converted entries); outside the earlier formal proof (two programs)
+band 27, lower half [19/10,2] | 10 | formal proof (converted entries); outside the earlier formal proof (two programs)
+band 27, upper half [2,41/20] | 6 | formal proof (converted entries); outside the earlier formal proof (two programs)
+band 28 | 6 | formal proof (converted entries); outside the earlier formal proof (two programs)
+band 29 | 4 | formal proof (converted entries); outside the earlier formal proof (two programs)
+Totals: 31 coverings, 227 entries; all 31 in the formal proof (converted entries); as tail-priced coverings, 25 in the
+earlier formal proof and 6 outside it.
+
+PART 7. Where the data are. Below, F7 is family F7 of version 2.1.1 (the coverings of Part 6), which version 2.2 does not
+use. The data sets of families F1, F3, F6 and F7 (all but F1 are also verified in the formal
+proof), the programs that produced them and the independent checkers are in the archive that accompanies this file, under
+the folders below (paths relative to the archive; its file MANIFEST.sha256 gives the SHA-256 sum of every file, and the
+paper prints the SHA-256 sum of that manifest). Internal reports are not included, nor the coverings of the earlier
+second criterion below 50, which this route does not use.
+F1 small forests (the two producing programs and their outputs; two independent exact programs): F1_small_forests/
+F2 and F8 integer cases and kernel facts (a program written from the text): F2_F8_kernel_facts_replay/
+F3 variance bound (the two producing programs and data; two independent verifiers; independent reruns): F3_variance_bound/
+F4 variance ratio (replay of the 84,156 pieces by separate code): F4_variance_ratio_replay/
+F5 Laplace bounds (independent program on its own cover of 376,180 cells): F5_laplace_independent_cover/
+F6 boxes below 50 on subintervals 15 to 19, 24, 27: F6_boxes_below_50/
+F6 and F7 at the hand-proved caps (subintervals 38, 39, 43, 44, 47 to 54; bands 24, 26 to 29): F6_F7_hand_caps/
+F6 the 229 boxes from m* to 50; F7 the conversion of the 227 entries: F6_F7_one_criterion/
+F6 and F7 independent exact checkers: F6_F7_independent/
+F7 replay of the 178 tail-priced coverings of the formal proof: F7_formal_coverings_replay/
+All families except F1, F9 and F10: the formal proof (the route of version 2.1.1), branch one-route-v21, commit
+2d2ccf6404f49cabeb744da08396bec49474032d (data modules of the check families; F7 in converted form). The earlier formal
+proof is branch fiber-floor-21, commit aa8ba75f693476c4dca886a4a58dbcc0f5f74ae2; the public version 1.0 proof is commit
+c524aa2 of https://github.com/selfreferencing/erdos993-lean.
+F9 and F10 (version 2.2: the finite inequalities of the fiber inequality and the 55 averaging margins, Appendix B of the
+paper): the supplementary code, a second archive (supplementary_code.zip), with its checkers, their logs and its manifest
+SHA256SUMS.txt; the paper prints the SHA-256 sums of the archive and of that manifest. These families are not in the
+formal proof.
