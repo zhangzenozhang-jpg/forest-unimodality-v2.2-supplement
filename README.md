@@ -1,4 +1,4 @@
-# Unimodality of the independence sequence of a forest
+# Unimodality of Forest Independence Polynomials
 
 Supplementary materials for manuscript version 2.2 by **Wei Li, Kevin Vallier, and Tong Zhang**.
 
